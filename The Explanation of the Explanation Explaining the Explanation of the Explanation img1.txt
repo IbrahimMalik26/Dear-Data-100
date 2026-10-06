@@ -2,4 +2,23 @@ This will explain my thought process during research;
 I will try to explain my choices and reasons for the Dear
 Data 100 assignment.
 
-[Images in repo used for this are from: https://www.dear-data.com/by-week/]
+The first example i saw and chose from the "By Week - Dear Data" page
+was Week 02. This was based on a varierty of public transport that was taken.
+The public services used for data collection were buses and the subway. Addtionally,
+they walked and crossed bridges, they also listed places of interest such as home,
+work,the shops (if they just browsed or bought) and a restaurant/pub/coffee shop. Each
+path had thier own "Attributes" based on events all the way from talking to a stranger to listening
+to a podcast.
+
+
+[Images/info in repo used for this are from: https://www.dear-data.com/by-week/]
+
+
+
+
+
+
+
+
+
+(S) substitute, (C) combine, (A) adapt, (M) modify, (P) put to another use, (E) eliminate and (R) reverse.
