@@ -1,0 +1,5 @@
+This will explain my thought process during research;
+I will try to explain my choices and reasons for the Dear
+Data 100 assignment.
+
+[Images in repo used for this are from: https://www.dear-data.com/by-week/]
