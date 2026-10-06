@@ -8,7 +8,19 @@ The public services used for data collection were buses and the subway. Addtiona
 they walked and crossed bridges, they also listed places of interest such as home,
 work,the shops (if they just browsed or bought) and a restaurant/pub/coffee shop. Each
 path had thier own "Attributes" based on events all the way from talking to a stranger to listening
-to a podcast.
+to a podcast. In this i see seem to travel the most roughly around midday each day of the week (noted by
+each segment at the top). This person also travels or talks alot with people they know.
+
+Similarly, in Week 02, the other data record also depicts travel by Bus, by foot and Over/Underground/Train (and car). However,
+This visual representation depicts how much travel occurs daily in the form of a circle.
+
+For both, Locations and distances are not shown and are just abstracted.
+
+
+
+
+
+
 
 
 [Images/info in repo used for this are from: https://www.dear-data.com/by-week/]
