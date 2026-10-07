@@ -2,7 +2,7 @@ This will explain my thought process during research;
 I will try to explain my choices and reasons for the Dear
 Data 100 assignment.
 
-The first example i saw and chose from the "By Week - Dear Data" page
+For the first example i saw and chose from the "By Week - Dear Data" page
 was Week 02. This was based on a varierty of public transport that was taken.
 The public services used for data collection were buses and the subway. Addtionally,
 they walked and crossed bridges, they also listed places of interest such as home,
@@ -16,7 +16,7 @@ This visual representation depicts how much travel occurs daily in the form of a
 
 For both, Locations and distances are not shown and are just abstracted.
 
-
+The second example i chose Week - 01. This revolved around clocks and time.
 
 
 
