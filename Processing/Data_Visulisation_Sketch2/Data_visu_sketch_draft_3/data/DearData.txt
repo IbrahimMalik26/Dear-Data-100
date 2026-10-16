@@ -1,0 +1,1 @@
+﻿AM,>5mins late,On time,Tired,Listening to music,PM,>5mins late,Early,Angry,Listening to music,AM,>5mins late,On time,Happy,Listening to music,PM,N/a,Early,Happy,Listening to music,AM,On time,Early,Happy,Texting a friend,PM,N/a,On time,Happy,Texting a friend,AM,<5mins late,<5mins late,Happy,Reading a WebToon
