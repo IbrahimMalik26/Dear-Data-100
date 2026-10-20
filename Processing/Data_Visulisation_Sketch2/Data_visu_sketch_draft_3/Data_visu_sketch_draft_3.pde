@@ -2,13 +2,13 @@
 // note to self-please annotate this later im struggling to understand the code revisiting after a while
 void setup() {
 
-  String[] dearData = loadStrings("DearData.txt");
+  //String[] dearData = loadStrings("DearData.txt");
   
-  for (int t = 0; t< dearData.length; t++){
-  String[] tokensData = split(dearData[t],",");
-  printArray(dtokensData[]);
-  println("hi");
-  }
+  //for (int t = 0; t< dearData.length; t++){
+  //String[] tokensData = split(dearData[t],",");
+  //printArray(dtokensData[]);
+  //println("hi");
+  //}
   size(1000, 500);
 }
 
