@@ -15,9 +15,20 @@ void setup() {
   if (dearData == null) {
     println("theres no data found so like this is here so i dont crash");
   } else {
-    println("data has been loaded. yay...");
-    println("file has " + dearData.length + " lines.");
+    println("data has been loaded. yay..."); //message to verify loaded file 
+    println("file has " + dearData.length + " line(s)"); //checks if it can read/tells how many line(s)
+    
+    //for every loop from 0 to array length, split the data into tokens by each comma
+    for (int D = 0; D< dearData.length; D++){ 
+      String[] token = split(dearData[D], ",");
+      println(token[0]); //testing of tokens have correct values
+      println(token[1]);
+      println(token[2]);
+      println(token[3]);
+      println(token[4]);
+    }
   }
+  
   
 
 }
