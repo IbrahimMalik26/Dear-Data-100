@@ -61,11 +61,11 @@ void draw() {
     float weekY = week * chunkHeight; // which chunk of grid on  left to start with
 
     textSize(14);
-    text("Week " + (week + 1), 8, weekY + 35);
+    text("Week " + (week + 1), 8, weekY + 35); //week printed for the needed chunk on left
 
     textSize(12);
 
-    for (int i = 0; i < labels.length; i++) {
+    for (int i = 0; i < labels.length; i++) { // printing of labels under each week text
       float labelY = weekY + 65 + i * 23;
       text(labels[i], 8, labelY);
     }
