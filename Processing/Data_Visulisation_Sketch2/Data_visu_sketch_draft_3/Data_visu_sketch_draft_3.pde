@@ -1,4 +1,10 @@
-
+Table dearData;
+String[] startTime; //AM
+String[] endTime; //PM
+String[] busTiming; // > or < 5mins late
+String[] trainTiming; // > or < 5mins late
+String[] mood; // Tired/Angry/Happy/Sad
+String[] currentActivity; //Listening to music/Texting a friend/Reading a WebToon/On a call
 
 void setup() {
 
