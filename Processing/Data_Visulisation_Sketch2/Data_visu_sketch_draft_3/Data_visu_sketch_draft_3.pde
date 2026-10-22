@@ -1,4 +1,4 @@
-Table dearData;
+String[] dearData; // stores all of csv as an array
 String[] startTime; //AM
 String[] endTime; //PM
 String[] busTiming; // > or < 5mins late
@@ -8,14 +8,18 @@ String[] currentActivity; //Listening to music/Texting a friend/Reading a WebToo
 
 void setup() {
 
-  //String[] dearData = loadStrings("DearData.txt");
-
-  //for (int t = 0; t< dearData.length; t++){
-  //String[] tokensData = split(dearData[t],",");
-  //printArray(dtokensData[]);
-  //println("hi");
-  //}
   size(1000, 500); // creating a window thats  1000 by 500px
+  //find the file and load it into the table dearData
+  dearData = loadStrings("DearData.txt");
+  //if the data file doesnt load then this makes sure the program still runs and doesnt go schitzo
+  if (dearData == null) {
+    println("theres no data found so like this is here so i dont crash");
+  } else {
+    println("data has been loaded. yay...");
+    println("file has " + dearData.length + " lines.");
+  }
+  
+
 }
 
 void draw() {
@@ -41,7 +45,7 @@ void draw() {
 
 
   // use a for loop to draw vertical lines across the window for the 7 days of the week
-  for (int x = 0; x < 7; x++) { //loop 7 times
+  for (int x = 0; x < 7; x++) { //loop 7 times by incrementation duh
     float dayX = labelWidth + x * dayWidth; //var stores/states where each line is placed
     line(dayX, 25, dayX, height);
   }
