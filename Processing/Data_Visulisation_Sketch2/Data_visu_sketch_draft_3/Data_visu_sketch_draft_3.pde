@@ -15,22 +15,31 @@ void setup() {
   if (dearData == null) {
     println("theres no data found so like this is here so i dont crash");
   } else {
-    println("data has been loaded. yay..."); //message to verify loaded file 
+    println("data has been loaded. yay..."); //message to verify loaded file
     println("file has " + dearData.length + " line(s)"); //checks if it can read/tells how many line(s)
-    
-    //for every loop from 0 to array length, split the data into tokens by each comma
-    for (int D = 0; D< dearData.length; D++){ 
-      String[] token = split(dearData[D], ",");
-      println(token[0]); //testing of tokens have correct values
-      println(token[1]);
-      println(token[2]);
-      println(token[3]);
-      println(token[4]);
+
+    // initialize the arrays to match the amount of data in the array dearData with .length
+    startTime = new String[dearData.length];
+    busTiming = new String[dearData.length];
+    trainTiming = new String[dearData.length];
+    mood = new String[dearData.length];
+    currentActivity = new String[dearData.length];
+
+    // Loop through the array and store 5 chunks of data in each sub array
+    for (int d = 0; d < dearData.length; d++) {
+      String[] token = split(dearData[d], ",");
+
+      if (token.length >= 5) {
+        startTime[d] = token[0];
+        busTiming[d] = token[1];
+        trainTiming[d] = token[2];
+        mood[d] = token[3];
+        currentActivity[d] = token[4];
+      }
+      // test that the indexing works and the data stored in each array matches the csv
+      println("Line " + d + " mood: " + currentActivity[d]);
     }
   }
-  
-  
-
 }
 
 void draw() {
