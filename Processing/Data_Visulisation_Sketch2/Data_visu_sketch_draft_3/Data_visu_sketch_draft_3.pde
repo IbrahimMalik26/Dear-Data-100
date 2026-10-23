@@ -1,4 +1,3 @@
-import PImage; // could work with images to place corresponsing array things
 
 String[] dearData; // stores all of csv as an array
 String[] startTime; //AM
