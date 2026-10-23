@@ -1,3 +1,5 @@
+import PImage; // could work with images to place corresponsing array things
+
 String[] dearData; // stores all of csv as an array
 String[] startTime; //AM
 String[] endTime; //PM
@@ -36,6 +38,9 @@ void setup() {
         mood[d] = token[3];
         currentActivity[d] = token[4];
       }
+      
+      
+      
       // test that the indexing works and the data stored in each array matches the csv
       println("Line " + d + " mood: " + currentActivity[d]);
     }
@@ -68,6 +73,8 @@ void draw() {
   for (int x = 0; x < 7; x++) { //loop 7 times by incrementation duh
     float dayX = labelWidth + x * dayWidth; //var stores/states where each line is placed
     line(dayX, 25, dayX, height);
+    
+ 
   }
   // text settings
   fill(0);
