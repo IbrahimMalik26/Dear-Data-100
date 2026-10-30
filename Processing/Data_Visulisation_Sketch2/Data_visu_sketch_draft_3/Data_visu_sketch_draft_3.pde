@@ -1,4 +1,6 @@
 
+//make a key, mood could be a gradient can remove the mood tab - could remove the train/bus tabs and replace w/ one commute tab
+
 String[] dearData; // stores all of csv as an array
 String[] startTime; //AM
 String[] endTime; //PM
@@ -41,7 +43,14 @@ void setup() {
       
       
       // test that the indexing works and the data stored in each array matches the csv
-      println("Line " + d + " activity: " + currentActivity[d]);
+      //dearData[d] - prints all
+      //startTime[d] - Should be AM
+      //endTime[d] - should all be PM -- this doesnt work nullpointerexception, just use startTime
+      //busTiming[d]
+      //trainTiming[d]
+      //mood[d] - how i feel at that time
+      //currentActivity[d] - what im doing at that time
+      println("Line " + d + ": " + mood[d]);
     }
   }
 }
@@ -90,8 +99,8 @@ void draw() {
   // more text settings...
   textAlign(LEFT, CENTER);
   textSize(13);
-  // array made to store each data piece that will be represented
-  String[] labels = {"Train", "Bus", "Mood", "Activity"};
+  // array made to store labels of data that will be represented//mood will be the colour of the square.
+  String[] labels = {"Train", "Bus","Activity"};
   // nested for loop to print the titles for each week and below each label down the left side of the window
   for (int week = 0; week < 3; week++) {
     float weekY = week * chunkHeight; // which chunk of grid on  left to start with
