@@ -38,9 +38,9 @@ void setup() {
         mood[d] = token[3];
         currentActivity[d] = token[4];
       }
-      
-      
-      
+
+
+
       // test that the indexing works and the data stored in each array matches the csv
       //dearData[d] - prints all
       //startTime[d] - Should be AM
@@ -50,8 +50,9 @@ void setup() {
       //mood[d] - how i feel at that time
       //currentActivity[d] - what im doing at that time
       println("Line " + d + ": " + mood[d]);
-      
+
       test1 = new classTest();
+      test1.draw();
     }
   }
 }
@@ -70,11 +71,11 @@ void draw() {
   //draws the horizontal lines so 2 birds 1 stone lol
   stroke(0);
   strokeWeight(1);
-  fill(240);
+  fill(#FF0000);
   rect(0, 0, width, chunkHeight);
-  fill(220);
+  fill(#00D7FF);
   rect(0, chunkHeight, width, chunkHeight);
-  fill(200);
+  fill(#7AFF00);
   rect(0, chunkHeight * 2, width, chunkHeight);
 
 
@@ -82,8 +83,6 @@ void draw() {
   for (int x = 0; x < 7; x++) { //loop 7 times by incrementation duh
     float dayX = labelWidth + x * dayWidth; //var stores/states where each line is placed
     line(dayX, 25, dayX, height);
-    
- 
   }
   // text settings
   fill(0);
@@ -101,7 +100,7 @@ void draw() {
   textAlign(LEFT, CENTER);
   textSize(13);
   // array made to store labels of data that will be represented//mood will be the colour of the square.
-  String[] labels = {"Train", "Bus","Activity"};
+  String[] labels = {"Train", "Bus", "Activity"};
   // nested for loop to print the titles for each week and below each label down the left side of the window
   for (int week = 0; week < 3; week++) {
     float weekY = week * chunkHeight; // which chunk of grid on  left to start with
@@ -115,6 +114,5 @@ void draw() {
       float labelY = weekY + 65 + i * 23;
       text(labels[i], 8, labelY);
     }
-   test1.draw();
   }
 }

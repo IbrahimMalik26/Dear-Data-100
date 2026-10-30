@@ -2,7 +2,7 @@ class classTest
 {
   classTest() {
   }
-  void setup(){
+  void draw(){
     println("hi");
   }
 }
