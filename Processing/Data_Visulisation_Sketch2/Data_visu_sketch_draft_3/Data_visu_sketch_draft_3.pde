@@ -11,7 +11,7 @@ void setup() {
 
   size(1000, 500); // creating a window thats  1000 by 500px
   //find the file and load it into the table dearData
-  dearData = loadStrings("DearData.txt");
+  dearData = loadStrings("Dear Data 2(Sheet1).csv");
   //if the data file doesnt load then this makes sure the program still runs and doesnt go schitzo
   if (dearData == null) {
     println("theres no data found so like this is here so i dont crash");
@@ -41,7 +41,7 @@ void setup() {
       
       
       // test that the indexing works and the data stored in each array matches the csv
-      println("Line " + d + " mood: " + currentActivity[d]);
+      println("Line " + d + " activity: " + currentActivity[d]);
     }
   }
 }
