@@ -1,6 +1,5 @@
-
+classTest test1;
 //make a key, mood could be a gradient can remove the mood tab - could remove the train/bus tabs and replace w/ one commute tab
-
 String[] dearData; // stores all of csv as an array
 String[] startTime; //AM
 String[] endTime; //PM
@@ -51,6 +50,8 @@ void setup() {
       //mood[d] - how i feel at that time
       //currentActivity[d] - what im doing at that time
       println("Line " + d + ": " + mood[d]);
+      
+      test1 = new classTest();
     }
   }
 }
@@ -114,5 +115,6 @@ void draw() {
       float labelY = weekY + 65 + i * 23;
       text(labels[i], 8, labelY);
     }
+   test1.draw();
   }
 }
