@@ -1,0 +1,6 @@
+In the csv file:
+The first row has the time it was recorded in AM/Pm
+The second row has the timing for the bus (ontime/ <or>5 late/early)
+The third row has the timing for the train (ontime/ <or>5 late/early)
+The fourth row contains my average current mood for that time of recording
+The fifth row shows my current activity during that time
